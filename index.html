@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>    
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript to handle animations and interactions
+
+        // Animated Name
+        document.addEventListener('DOMContentLoaded', () => {
+            const nameElement = document.getElementById('name');
+            nameElement.addEventListener('mouseover', () => {
+                nameElement.style.color = 'white';
+            });
+            nameElement.addEventListener('mouseout', () => {
+                nameElement.style.color = 'black';
+            });
+        });
+
+document.addEventListener('DOMContentLoaded', () => {
+            const nameElement = document.getElementById('name');
+            const nameText = 'Anuj Sharma'; 
+ // Replace with your name
+
+            // Function to simulate typing effect
+            let index = 0;
+            const typingSpeed = 500;  // Adjust typing speed here
+
+            function typeWriter() {
+                if (index < nameText.length) {
+                    nameElement.textContent += nameText.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, typingSpeed);
+                }
+            }
+
+            typeWriter();
+            
+        });
+  // JavaScript to handle button clicks
+document.querySelectorAll('.view-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+        // Example: Redirect to a project page
+        window.location.href = 'project-details.html';  // Change to your actual project page
+    });
+});
+</script>
+</head>
+<body>
+    <!-- Navigation -->
+  <div>
+    <nav><div class="logo-style"> ANUJ SHARMA  </div>
+         <ul>
+            
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="mobile-menu-toggle">☰</button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay Background for Mobile Nav -->
+    <div class="mobile-nav-overlay"></div>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro"><br><br><br><br><br>
+            <h1 id="animated-name">Welcome</h1><br><br>
+           <div> <p>I'm <span id="name"> </span>
+            </p></div>
+            <!-- Your large photo -->
+            <br><br>
+            <img src="a.jpg.jpg" alt="Your Photo" class="imghome"><br><br>
+
+
+     
+    <!-- SOCIAL LINK -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/anuj-sharma-5a0459282"  target="_blank" class="social-button" id="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg>            
+            </a>
+            <a href="https://www.instagram.com/anuj_sharma__________?utm_source=qr&igsh=MnB6ZzdpdGZrbHlm" target="_blank" class="social-button" id="instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+               
+            </a>
+        </div>
+<br><br>
+      </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about">
+    <h2 class="abth2">About Me</h2><br>
+    <div class="about-content">
+        <img src="a1.jpg" class="imghome" alt="Your Photo">
+        <p style="font-family:Cursive, Helvetica, sans-serif; font-size:22px;"> Hi, I'm <strong>Anuj Sharma</strong>, a passionate and dedicated web developer with a strong foundation in modern programming languages and technologies.
+            I specialize in creating dynamic, user-friendly, and innovative web solutions that bring ideas to life.
+
+            With expertise in HTML, CSS, JavaScript, C, C++, Java, .NET, Visual Basic, C#, and database management systems, I have a versatile skill set to design and develop seamless web experiences. My goal is to build websites and applications that not only look great but also perform efficiently.
+
+            Whether it's developing responsive front-end designs or ensuring robust back-end functionality, I thrive on solving challenges and delivering results that exceed expectations. I am always eager to learn and stay updated with the latest industry trends to keep my work at the cutting edge.
+        </p>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section class="sk" id="skills">
+<div class="D">
+<h2>SKILLS</h2><br>
+
+<div class="border-hover">
+  <div class="container">
+   <div class="choice1">
+    <img class="imgs" src="html.png" alt><br>
+     <p class="para">HTML</p>
+  </div>
+
+  <div class="choice1">
+   <img class="imgs" src="css.png" alt><br>
+    <p class="para">CSS</p>
+  </div>
+  <div class="choice1">
+  <img class="imgs" src="js.png" alt>
+   <p class="para">JAVA SCRIPT</p>
+  </div>
+   <div class="choice1">
+  <img class="imgs" src="react.png" alt>
+   <p class="para">React.js</p>
+  </div>
+ <div class="choice1">
+  <img class="imgs" src="java.png" alt><br>
+   <p class="para">JAVA</p>
+  </div>
+ <div class="choice1">
+  <img class="imgs" src="mysql.png" alt><br>
+   <p class="para">MY SQL</p>
+ </div>
+ <div class="choice1">
+  <img class="imgs" src="c language.png" alt>
+   <p class="para">C LANGUAGE</p>
+ </div>
+ <div class="choice1">
+  <img class="imgs" src="asp.net.png"  alt><br>
+   <p class="para">ASP .NET</p>
+ </div>
+<div class="choice1">
+  <img class="imgs" src="c++.png"  alt><br>
+   <p class="para">C ++</p>
+ </div>
+<div class="choice1">
+  <img class="imgs" src="c.png"  alt><br>
+   <p class="para">C #</p>
+ </div>
+</div>
+</div>
+</section>
+
+    <!-- Education -->
+    <!-- Education Section -->
+<section id="education">
+    <h2>Education</h2><br>
+    <div class="education-timeline">
+        <div class="education-item">
+            <div class="education-year">Currently Pursuing</div>
+            <div class="education-details">
+                <h3>Master's of Computer Application</h3>
+                <p>TEERTHANKER MAHAVEER UNIVERSITY, MORADABAD, UP, INDIA</p>
+                
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-year">2020-2023</div>
+            <div class="education-details">
+                <h3>Bachelor's of Computer Application</h3>
+                <p>M J P R U, Bareilly, UP, INDIA</p>
+                <!-- <p>79.28%</p> -->
+                
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-year">2019-2020</div>
+            <div class="education-details">
+                <h3>INTERMEDIATE</h3>
+                <p>Radha Inter College Dhampur, UP, INDIA</p>
+                <!-- <p>76.8%</p> -->
+            
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-year">2017-2018</div>
+            <div class="education-details">
+                <h3>HIGH SCHOOL</h3>
+                <p>Radha Inter College Dhampur, UP, INDIA</p>
+                <!-- <p>82.33%</p> -->
+                
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="proh2">My Projects</h2><br><br>
+        <div class="projects-gallery">
+            <!-- <div class="project">
+                <img src="Screenshot 2025-03-20 220151.png" alt="Project 1">
+                <p><b>ONLINE TEACHING</b><br> </p><p> A website I built using ASP.NET and C #.</p><br><br>
+            <button class="view-btn">View</button>          
+            </div> -->
+            <div class="project">
+            <img src="Screenshot 2025-07-13 205809.png.png" alt="Project 2">
+            <p><b>Calculator</b><br> </p><p> A web application built using HTML and CSS , Java Script.</p><br><br>
+<button class="view-btn"><a href="https://github.com/Anujsharma7037/Calculator.git" >View</a></button>
+        </div>
+        
+        </div>
+        
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2 class="feedh2">Feedback</h2><br>
+<form action="https://api.web3forms.com/submit" method="POST" id="feedback-form">
+    <!-- Required: Access Key -->
+    <input type="hidden" name="access_key" value="da9f54f3-5654-4f92-a02b-cc38c05f3795">
+
+    <div class="form-group">
+        <label for="name"><b>Your Name:</b></label>
+        <input type="text" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email"><b>Your Email:</b></label>
+        <input type="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message"><b>Your Feedback:</b></label>
+        <textarea name="message" placeholder="ENTER HERE!....." required style="font-size:20px;"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+<div id="feedback-response"></div>
+        <div id="feedback-response"></div>
+    </section>
+
+<!-- Contact Section -->
+<section class="footer">
+  <div class="footer-content">
+    <div class="img-container"><br>
+      <img src="a1.jpg" alt="Avatar" class="imgf"><br>
+    </div>
+    <div class="contact-info">
+      <h2>CONTACT</h2>
+      <h3><i class="fas fa-phone-alt"></i> +91 7037839992</h3><br>
+      <h3><i class="fas fa-envelope"></i> anujsharma7037as@gmail.com</h3>
+    </div><br>
+    <div class="useful-links">
+      <h2>Useful Links</h2>
+      <h3><a href="#home">Home</a></h3>
+      <h3><a href="#about">About</a></h3>
+      <h3><a href="#skills">Skills</a></h3>
+      <h3><a href="#education">Education</a></h3>
+      <h3><a href="#projects">Projects</a></h3>
+    </div>
+  </div>
+</section>
+
+<!-- <footer class="black">
+  <div class="footer-bottom">
+    <h2>@2025 www.Anuj Sharma.in. All Rights Reserved.</h2>
+  </div>
+</footer> -->
+ 
+<script>
+        // JavaScript to toggle the mobile menu and overlay
+        const toggleButton = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const overlay = document.querySelector('.mobile-nav-overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-nav ul li a');
+
+        toggleButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        // Close the mobile menu when any of the links are clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+
+        // Close the mobile menu when the overlay is clicked
+        overlay.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+ // Feedback Form Handling
+        const form = document.getElementById('feedback-form');
+  const response = document.getElementById('feedback-response');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      response.textContent = 'Thank you! Your feedback has been sent.';
+      response.style.color = 'green';
+      form.reset(); // Clears form fields
+    } else {
+      response.textContent = 'There was a problem sending your feedback.';
+      response.style.color = 'red';
+    }
+  });
+
+// Number of stars to generate
+const numberOfStars = 100; // You can adjust this value
+const homeSection = document.getElementById('home');
+
+// Function to create a star
+function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+
+    // Randomize the position of the star
+    const positionX = Math.random() * 100;  // Random horizontal position (from 0% to 100% width)
+    const positionY = Math.random() * 100;  // Random vertical start position (from 0% to 100% height)
+
+    // Randomize the falling speed of the star (animation duration)
+    const duration = Math.random() * (5 - 2) + 2; // Randomize between 2s and 5s
+
+    // Optional: Randomize the size of the stars
+    const size = Math.random() * (10 - 6) + 6; // Size between 6px and 10px
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    // Apply random positioning and animation duration
+    star.style.left = `${positionX}vw`;  // Position from the left
+    star.style.top = `${positionY}vh`;  // Position from the top
+    star.style.animationDuration = `${duration}s`; // Set random animation duration
+
+    // Append star to home section
+    homeSection.appendChild(star);
+}
+
+// Create multiple stars
+for (let i = 0; i < numberOfStars; i++) {
+    createStar();
+}
+</script>
+</body>
+</html>
